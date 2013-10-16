@@ -1,0 +1,15 @@
+<!-- reviews/show.html.erb -->
+<h2><%=  @movie_reviews[0][:title] %></h2>
+<h3>Average rating: <%=  @average_rating %></h3>
+
+<div>
+  <% @movie_reviews.each do |movie_review| %>
+  <li>Rating: <%= movie_review.rating %> Review: <%= movie_review.review %>
+    <small>Created <%= time_ago_in_words movie_review.created_at %> ago.</small></li>
+  <% end %>
+<div>
+   </br>
+   <a href="/reviews/new/<%=  @movie_reviews[0][:movie_id]  %>"><button>Add Review</button></a>
+   <a href="/reviews"><button>Reviewed Movies</button></a>
+   <a href="/"><button>Movie Search</button></a>
+</div>

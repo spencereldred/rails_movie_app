@@ -1,0 +1,22 @@
+<!-- reviews/new.html.erb -->
+<h1>Create Review for <%= @title %></h1>
+<form method="post" action="/reviews">
+  <input type="text" name="movie_id" value=<%= @movie_id %> hidden>
+  <input type="text" name="title" value='<%= @title %>' hidden>
+  <!-- Rating (0 - 5): <input type="text" name="rating"></br> -->
+  Rating (0 - 5):
+    <select name="rating" >
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+</br>
+  Review: </br>
+  <textarea name="review" id="" cols="30" rows="8"></textarea>
+  </br>
+  <button type="submit">Submit Review</button>
+  </br>
+  <a href="/reviews"><button>Reviewed Movies</button></a>
+</form>

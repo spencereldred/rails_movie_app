@@ -1,0 +1,11 @@
+<!-- movies/index.html.erb -->
+<h2>Select a Movie</h2>
+<div>
+  <% @movies.each do |movie| %>
+      <div ><a class="list" href="/imdb/<%= movie['imdbID']  %>" > <%= movie["Title"] %> (<%= movie["Year"]%>)</a></div>
+  <% end %>
+</div>
+<div>
+</br>
+  <a href="/"><button>Movie Search</button></a>
+</div>

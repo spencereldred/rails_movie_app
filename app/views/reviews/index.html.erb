@@ -1,0 +1,12 @@
+<!-- reviews/index.html.erb -->
+<h1>List of Reviewed Movies</h1>
+<div>
+  <% @reviews.each_with_index do |r, i| %>
+  <!-- r.values[0][1] contains the movie_id -->
+  <li><%= r.keys[0] %>   Number of reviews: <%= r.values[0][0] %>  <a href="/reviews/<%= "#{r.values[0][1]}" %>">see reviews</a></li>
+  <% end %>
+</div>
+<div>
+   </br>
+    <a href="/"><button>Movie Search</button></a>
+</div>

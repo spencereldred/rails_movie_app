@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies</title>
+  <link href='http://fonts.googleapis.com/css?family=Kite+One' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<div class="container" >
+    <div class ="content">
+  <body id="container">
+    <header>
+      <h1>Movie App</h1>
+    </header>
+    <section>
+      <article>
+
+        <!-- <hr/> -->
+        <%= yield %>
+        <!-- <hr/> -->
+
+      </article>
+    </section>
+  </body>
+  </div>
+</div>
+<div id="footer">
+<footer>
+  <p>
+    Spencer Eldred<br/>
+    eldredspencer@gmail.com<br/>
+    808.280.3758 <br>
+  </p>
+  <div>
+    <ul>
+        <li><a href="https://www.facebook.com/spencer.eldred.3" title="Spencer's Facebook" ><img class="icon" src="/assets/facebook.png" alt="Facebook" title="Facebook"></a>
+        </li>
+        <li><a href="https://twitter.com/login" title="Spencer's Twitter" ><img class="icon" src="/assets/twitter.jpeg"
+            alt="`Twitter" title="`Twitter"></a>
+        </li>
+        <li><a href="https://www.linkedin.com/" title="Spencer's Linked In" ><img class="icon" src="/assets/linked_in_icon.jpg"
+            alt="Linked In" title="Linked In"></a>
+        </li>
+      </ul>
+    </div>
+</footer>
+</div>
+</html>

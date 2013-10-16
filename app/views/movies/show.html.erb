@@ -1,0 +1,32 @@
+<!-- movies/show.html.erb -->
+<div>
+
+  <div id="poster">
+    <% if @movie_info["Poster"] == "N/A" %>
+         <h1>No Image Available</h1>
+    <% else %>
+        <img  src="<%= @movie_info["Poster"] %>"
+              alt="no picture on file">
+    <% end %>
+  </div>
+
+  <div id="details">
+    <div><span class="label">Title: </span>              <span class="value"><%= @movie_info["Title"] %> (<%= @movie_info["Year"] %>)</span></div>
+    <div><span class="label">Rated: </span>             <span class="value"><%= @movie_info["Rated"] %></span></div>
+    <div><span class="label">Runtime: </span>         <span class="value"><%= @movie_info["Runtime"] %></div>
+    <div><span class="label">Genre: </span>             <span class="value"><%= @movie_info["Genre"] %></span></div>
+    <div><span class="label">Writer: </span>            <span class="value"><%= @movie_info["Writer"] %></span></div>
+    <div><span class="label">Director: </span>         <span class="value"><%= @movie_info["Director"] %></span></div>
+    <div><span class="label">Actors: </span>         <span class="value"><%= @movie_info["Actors"] %></span></div>
+    <div><span class="label">Rating: </span>            <span class="value"><%= @movie_info["imdbRating"] %></span></div>
+    <div><span class="label">Votes: </span>             <span class="value"><%= @movie_info["imdbVotes"] %></span></div>
+    <div><span class="label">Type: </span>              <span class="value"><%= @movie_info["Type"] %></span></div>
+    <div><span class="label">Plot: </span>                <span class="value"><%= @movie_info["Plot"] %></span></div>
+
+  </div>
+  <div>
+      <a href="/"><button >Movie Search</button></a> <a href="/reviews"><button >Reviewed Movies</button></a><a href="/reviews/new/<%= @movie_info['imdbID']  %>"><button >Add Review</button></a>
+  </div>
+
+</div>
+

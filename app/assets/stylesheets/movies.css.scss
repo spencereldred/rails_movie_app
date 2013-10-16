@@ -1,0 +1,157 @@
+// Place all the styles related to the movies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Movies Style */
+
+.list {
+  color: black;
+  opacity: .7;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.list:hover {
+  opacity: 1;
+  font-size: 1.4em;
+}
+
+
+
+.container {
+  position: relative;
+  font-family: 'Kite One', sans-serif;
+  /*max-width: 980px;*/
+      height: 540px;
+      /*width: 1800px;*/
+      margin: 0 10% 0 10%;
+
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /*background-image: url('wizard_2.jpg');*/
+    background: transparent url('wizard_2.jpg') no-repeat;
+
+   opacity: 0.3;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    /*opacity: 1;*/
+}​
+
+body {
+      /*opacity: 1;*/
+      /*max-width: 980px;*/
+  text-align: center;
+  font-family: 'Kite One', sans-serif;
+}
+article {
+  margin: 10px 10% 10px 10%;
+  text-align: center;
+}
+header  {
+  text-align: center;
+}
+
+ul > li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  list-style: none;
+}
+
+button {
+  background: black;
+  width: 190px;
+  height: 40px;
+  font-size: 1.2em;
+  opacity: 0.4;
+  color: white;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+
+}
+button:hover {
+  opacity: 0.7;
+}
+
+img[class="icon"] {
+   height: 20px;
+   width: 20px;
+   margin: 0 0px 0 0px;
+   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+   /*border: 2px solid black;*/
+}
+
+footer {
+      font-family: 'Kite One', sans-serif;
+  font-size: .9em;
+    text-align: center;
+      float: clear;
+  opacity: 1;
+}
+select {
+  height: 30px;
+  font-size: 1.1em;
+}
+input {
+  width: 250px;
+  heigh: 100px;
+  font-size: 1.3em;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+textarea {
+  font-size: 1em;
+  font-family: 'Kite One', sans-serif;
+   -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+div>li {
+  list-style: none;
+  padding: 3px 0;
+}
+.label {
+  float: left;
+  width: 100px;
+  margin-left: 10px;
+  text-align: right;
+  margin: 3px 10px;
+}
+.value {
+  float: left;
+  text-align: left;
+  width: 350px;
+  margin: 3px 20px;
+}
+
+#poster {
+  float: left;
+}
+
+#poster img {
+  /*width: 250px;*/
+  height: 350px;
+}
+
+#details {
+  font-size: 1em;
+}
+
+#footer {
+
+}
